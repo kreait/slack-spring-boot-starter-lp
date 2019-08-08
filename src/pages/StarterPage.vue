@@ -8,17 +8,20 @@
 </template>
 <script lang="ts">
   import GuideService from '@/services/guide.service';
+  import { Component, Vue } from 'vue-property-decorator';
 
-
-  export default{
-    guideId:"",
-    guide:{},
+  @Component({
+    name: 'guide-group',
+  })
+  export default class StarterPage extends Vue{
+    guideId="";
+    guide={};
     data(){
       return {
         guideId: this.$route.params.guideId,
         guide: {}
       }
-    },
+    }
     created(){
       if(localStorage.getItem(this.guideId)){
         try {
