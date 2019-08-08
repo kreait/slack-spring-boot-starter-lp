@@ -123,7 +123,7 @@ export default {
             .then( (response) =>{
               console.log("response: " +response);
               this.guides = response;
-              localStorage.setItem("guides",JSON.stringify(response))
+              localStorage.setItem("guides",JSON.stringify(response));
             });
   },
   render(){

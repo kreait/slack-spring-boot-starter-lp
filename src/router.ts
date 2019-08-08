@@ -23,7 +23,7 @@ export default new Router({
       name: 'guides',
       components: { default: Starter, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 0 },
         footer: { backgroundColor: 'black' },
       },
     },
