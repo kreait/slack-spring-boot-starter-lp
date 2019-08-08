@@ -1,0 +1,36 @@
+{
+  "name": "vue-now-ui-kit",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@types/webpack-env": "^1.14.0",
+    "axios": "^0.19.0",
+    "babel-plugin-component": "^1.1.1",
+    "bootstrap": "^4.3.0",
+    "element-ui": "^2.5.4",
+    "nouislider": "^11.1.0",
+    "vue": "^2.6.6",
+    "vue-class-component": "^7.1.0",
+    "vue-lazy-load": "^0.0.7",
+    "vue-lazyload": "^1.2.6",
+    "vue-property-decorator": "^8.2.1",
+    "vue-router": "^3.0.3",
+    "vue2-transitions": "^0.2.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-typescript": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "axios": "^0.18.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.4.3",
+    "vue-cli-plugin-axios": "^0.0.4",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
