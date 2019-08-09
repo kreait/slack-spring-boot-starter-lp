@@ -96,31 +96,30 @@
       </div>
   </div>
 </template>
-<script lang="ts">
+<script>
 const Button =require("@/components/Button");
-const FormGroupInput = require("@/components/Inputs/formGroupInput");
 import GuideService from '../services/guide.service';
 import VueRouter from 'vue-router';
+import { Component, Vue } from 'vue-property-decorator';
 
-export default {
+@Component({
   name: 'landing',
-  bodyClass: 'landing-page',
-  guides:[] = [],
-  maxGuides:6,
-  components: {
-    [Button.name]: Button,
-    [FormGroupInput.name]: FormGroupInput
-  },
-  data(){
+})
+export default class Landing extends Vue {
+  name= 'landing';
+  bodyClass= 'landing-page';
+  guides = [];
+  maxGuides=6;
+  static data(){
     return {
       guides:[]= [],
       maxGuides:6
     }
-  },
+  }
   mounted() {
     if(localStorage.getItem("guides")){
       try {
-        this.guides = JSON.parse(<string>localStorage.getItem("guides"));
+        this.guides = JSON.parse(localStorage.getItem("guides"))
       }catch(e) {
         console.error(e)
       }
@@ -131,19 +130,16 @@ export default {
               this.guides = response;
               localStorage.setItem("guides",JSON.stringify(response));
             });
-  },
-  render(){
+  }
 
-  },
-  methods:{
-    viewAll(){
-      this.maxGuides= this.guides.length;
-      console.log(this.maxGuides)
-    },
-    collapse(){
-      this.maxGuides= 6;
-      console.log(this.maxGuides)
-    }
+  viewAll(){
+    this.maxGuides= this.guides.length;
+    console.log(this.maxGuides)
+  }
+
+  collapse(){
+    this.maxGuides= 6;
+    console.log(this.maxGuides)
   }
 };
 </script>
