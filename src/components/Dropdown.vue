@@ -34,8 +34,13 @@
   </component>
 </template>
 <script>
-export default {
+  import ClickOutside from "vue-click-outside";
+
+  export default {
   name: 'drop-down',
+  directives: {
+    ClickOutside
+  },
   props: {
     direction: {
       type: String,

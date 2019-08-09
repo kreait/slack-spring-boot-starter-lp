@@ -33,7 +33,7 @@
 <script>
 import { CollapseTransition } from 'vue2-transitions';
 import NavbarToggleButton from './NavbarToggleButton';
-
+import ClickOutside from "vue-click-outside";
 let resizeTimeout;
 function resizeThrottler(actualResizeHandler) {
   // ignore resize events as long as an actualResizeHandler execution is in the queue
@@ -49,6 +49,9 @@ function resizeThrottler(actualResizeHandler) {
 
 export default {
   name: 'navbar',
+  directives: {
+    ClickOutside
+  },
   props: {
     transparent: {
       type: Boolean,

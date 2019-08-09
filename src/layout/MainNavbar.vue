@@ -33,6 +33,7 @@
               tag="li"
               title="Examples"
               icon="now-ui-icons design_image"
+
               class="nav-item">
 
         <a style="color: #2c2c2c" href="https://github.com/kreait/slack-spring-boot-starter/blob/master/samples/slack-spring-boot-starter-sample/src/main/kotlin/io/olaph/slack/sample/PingCommandReceiver.kt">
