@@ -76,8 +76,8 @@
       <div class="container">
         <h2 class="title">Guides</h2>
         <div class="team row">
-            <div class="col-md-4" style=" padding-bottom: 20px" v-for="(guide) in guides" v-bind:key="guide.id">
-                <div class="card h-100" style="width: 20rem;;">
+            <div class="col-md-4" style=" padding-bottom: 20px" v-for="(guide, index) in guides" v-bind:key="index">
+                <div class="card h-100" style="width: 20rem;;" v-if="index < maxGuides">
                 <div class="card-body">
                   <h4 class="card-title">{{guide.title}}</h4>
                   <p class="card-text">{{guide.excerpt}}</p>
@@ -87,6 +87,10 @@
                 </router-link>
               </div>
             </div>
+          <div class="text-center w-100">
+            <div class="btn btn-primary w-25" v-if="maxGuides === 6" v-on:click="viewAll()">View all</div>
+            <div class="btn btn-primary w-25" v-if="maxGuides > 6" v-on:click="collapse()">Collapse</div>
+          </div>
           </div>
         </div>
       </div>
@@ -102,13 +106,15 @@ export default {
   name: 'landing',
   bodyClass: 'landing-page',
   guides:[] = [],
+  maxGuides:6,
   components: {
     [Button.name]: Button,
     [FormGroupInput.name]: FormGroupInput
   },
   data(){
     return {
-      guides:[]= []
+      guides:[]= [],
+      maxGuides:6
     }
   },
   mounted() {
@@ -128,6 +134,16 @@ export default {
   },
   render(){
 
+  },
+  methods:{
+    viewAll(){
+      this.maxGuides= this.guides.length;
+      console.log(this.maxGuides)
+    },
+    collapse(){
+      this.maxGuides= 6;
+      console.log(this.maxGuides)
+    }
   }
 };
 </script>
