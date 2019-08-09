@@ -13,13 +13,8 @@
             </a>
           </li>
           <li>
-            <a href="https:///presentation.creative-tim.com">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="https:///blog.creative-tim.com">
-              Blog
+            <a href="https://kreait.com">
+              KREAIT
             </a>
           </li>
         </ul>
@@ -28,7 +23,7 @@
         &copy; {{ year }}, Designed by
         <a href="https:///www.invisionapp.com" target="_blank" rel="noopener"
           >Invision</a
-        >. Coded by
+        >. Template by
         <a href="https://binarcode.com" target="_blank" rel="noopener"
           >BinarCode</a
         >

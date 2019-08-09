@@ -2,15 +2,15 @@
   <div>
     <div class="page-header page-header-small" >
       <div class="container">
-            <h4 class="title">Why use slack-spring-boot-starter?</h4>
-            <div class="card-body text-black">
+            <h2 class="title">Why use slack-spring-boot-starter?</h2>
+            <div class="">
               <ul>
-                <li class="list-group-item">Comes with a handy set of abstractions that make your life boilerplate free</li>
-                <li class="list-group-item">Creating slash commands is as easy as implementing a single interface</li>
-                <li class="list-group-item">Reacting on events is as easy as implementing a single interface</li>
-                <li class="list-group-item">Reacting on interactive components is as easy as implementing a single interface</li>
-                <li class="list-group-item">App installation workflow just works and takes care of the whole authentication flow</li>
-                <li class="list-group-item">Supports signing out of the box</li>
+                <li class="list-item">Comes with a handy set of abstractions that make your life boilerplate free</li>
+                <li class="list-item">Creating slash commands is as easy as implementing a single interface</li>
+                <li class="list-item">Reacting on events is as easy as implementing a single interface</li>
+                <li class="list-item">Reacting on interactive components is as easy as implementing a single interface</li>
+                <li class="list-item">App installation workflow just works and takes care of the whole authentication flow</li>
+                <li class="list-item">Supports signing out of the box</li>
               </ul>
             </div>
       </div>
@@ -21,7 +21,7 @@
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">What is Slack Spring Boot Starter?</h2>
             <h4 class="description">
-              The Slack Spring Boot Starter is an sdk to build your own Slackbot.
+              The Slack Spring Boot Starter is an SDK to build your own Slackbot.
               It comes with handy default implementations such as the teamstore which enable you to focus on the important part of  software development: <b>Your product</b>
             </h4>
           </div>
@@ -31,28 +31,27 @@
           <div class="row">
             <div class="col-md-6">
               <div
-                class="image-container image-left"
-                style="background-image: url('img/login.jpg')"
+                class="image-container image-left img2"
               >
                 <!-- First image on the left side -->
                 <p class="blockquote blockquote-primary">
                   It's really that simple?
+                  oh, yeah it is
                   <br />
                   <br />
-                  <small>-almost everyone</small>
+                  <small>- almost everyone</small>
                 </p>
               </div>
               <!-- Second image on the left side of the article -->
               <div
                 class="image-container"
-                style="background-image: url('img/bg3.jpg')"
               ></div>
             </div>
             <div class="col-md-5">
               <!-- First image on the right side, above the article -->
               <div
-                class="image-container image-right"
-                style="background-image: url('img/bg1.jpg')"
+                class="image-container image-right img1"
+
               ></div>
               <h3>
                 Why we do what we do:
@@ -99,7 +98,6 @@
 <script>
 const Button =require("@/components/Button");
 import GuideService from '../services/guide.service';
-import VueRouter from 'vue-router';
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
@@ -144,6 +142,14 @@ export default class Landing extends Vue {
 };
 </script>
 <style>
+.img1{
+  background-image: url(../assets/img/light.jpg)
+}
+.img2{
+  background-image: url(../assets/img/coding.jpg)
+}
 
-
+.list-item{
+  list-style:none;
+}
 </style>

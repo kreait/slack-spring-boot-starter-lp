@@ -1,6 +1,5 @@
 <template>
   <div class="container" style="margin-top: 8%">
-
     <h1 class="title" v-html="this.guide.title"></h1>
     <div class="section" v-html="this.guide.description">
     </div>
