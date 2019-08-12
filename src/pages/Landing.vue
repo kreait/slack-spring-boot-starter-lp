@@ -44,7 +44,7 @@
               </div>
               <!-- Second image on the left side of the article -->
               <div
-                class="image-container"
+                class="image-container img3"
               ></div>
             </div>
             <div class="col-md-5">
@@ -146,9 +146,11 @@ export default class Landing extends Vue {
   background-image: url(../assets/img/light.jpg)
 }
 .img2{
-  background-image: url(../assets/img/coding.jpg)
+   background-image: url(../assets/img/coding.jpg)
+ }
+.img3{
+  background-image: url(../assets/img/code_snippet.png)
 }
-
 .list-item{
   list-style:none;
 }

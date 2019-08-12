@@ -8,11 +8,6 @@
       <nav>
         <ul>
           <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
-            </a>
-          </li>
-          <li>
             <a href="https://kreait.com">
               KREAIT
             </a>
