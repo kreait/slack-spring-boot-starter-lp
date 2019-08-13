@@ -1,31 +1,32 @@
 <template>
   <div>
-    <div class="page-header page-header-small" >
-      <div class="container">
-            <h2 class="title">Why use slack-spring-boot-starter?</h2>
-            <div class="">
-              <ul>
-                <li class="list-item">Comes with a handy set of abstractions that make your life boilerplate free</li>
-                <li class="list-item">Creating slash commands is as easy as implementing a single interface</li>
-                <li class="list-item">Reacting on events is as easy as implementing a single interface</li>
-                <li class="list-item">Reacting on interactive components is as easy as implementing a single interface</li>
-                <li class="list-item">App installation workflow just works and takes care of the whole authentication flow</li>
-                <li class="list-item">Supports signing out of the box</li>
-              </ul>
-            </div>
-      </div>
-    </div>
-    <div class="section section-about-us">
+    <div class="section bg-primary text-white" >
       <div class="container">
         <div class="row" >
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">What is Slack Spring Boot Starter?</h2>
-            <h4 class="description">
+            <h3 class="description text-white text_bold">
               The Slack Spring Boot Starter is an SDK to build your own Slackbot.
               It comes with handy default implementations such as the teamstore which enable you to focus on the important part of  software development: <b>Your product</b>
-            </h4>
+            </h3>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="section section-about-us">
+      <div class="container">
+        <h2 class="title">Why use slack-spring-boot-starter?</h2>
+        <div class="">
+          <ul>
+            <li class="list-item">Comes with a handy set of abstractions that make your life boilerplate free</li>
+            <li class="list-item">Creating slash commands is as easy as implementing a single interface</li>
+            <li class="list-item">Reacting on events is as easy as implementing a single interface</li>
+            <li class="list-item">Reacting on interactive components is as easy as implementing a single interface</li>
+            <li class="list-item">App installation workflow just works and takes care of the whole authentication flow</li>
+            <li class="list-item">Supports signing out of the box</li>
+          </ul>
+        </div>
+
         <div class="separator separator-primary"></div>
         <div class="section-story-overview">
           <div class="row">
@@ -152,6 +153,5 @@ export default class Landing extends Vue {
   background-image: url(../assets/img/code_snippet.png)
 }
 .list-item{
-  list-style:none;
 }
 </style>
