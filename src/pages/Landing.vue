@@ -151,7 +151,6 @@ export default class Landing extends Vue {
  }
 .img3{
   background-image: url(../assets/img/code_snippet.png);
-}
-.list-item{
+  
 }
 </style>
