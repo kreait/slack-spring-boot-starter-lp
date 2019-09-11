@@ -4,10 +4,10 @@
     type="primary"
     :transparent="transparent"
     :color-on-scroll="colorOnScroll"
-    menu-classes="ml-auto"
-  >
+    menu-classes="ml-auto">
     <template slot-scope="{ toggle, isToggled }">
       <router-link v-popover:popover1 class="title" to="/">
+        <img src="../assets/img/favicon.png" height="40dp"/>
         Slack Spring Boot Starter
       </router-link>
     </template>
@@ -15,25 +15,19 @@
       <drop-down
         tag="li"
         title="Components"
-        icon="now-ui-icons design_app"
-        class="nav-item"
-      >
+        class="nav-item">
         <nav-link to="/">
-          <i class="now-ui-icons business_chart-pie-36"></i> All components
+          All components
         </nav-link>
-        <a
-          href="https://github.com/kreait/slack-spring-boot-starter"
+        <a href="https://github.com/kreait/slack-spring-boot-starter"
           target="_blank"
-          class="dropdown-item"
-        >
-          <i class="now-ui-icons design_bullet-list-67"></i> Documentation
+          class="dropdown-item">
+          Documentation
         </a>
       </drop-down>
       <drop-down
               tag="li"
               title="Examples"
-              icon="now-ui-icons design_image"
-
               class="nav-item">
 
         <a style="color: #2c2c2c" href="https://github.com/kreait/slack-spring-boot-starter/blob/master/samples/slack-spring-boot-starter-sample/src/main/kotlin/io/olaph/slack/sample/PingCommandReceiver.kt">
@@ -53,14 +47,12 @@
         </a>
       </drop-down>
       <li class="nav-item">
-        <a
-          class="nav-link"
+        <a class="nav-link"
           rel="tooltip"
           title="Check us out on Github"
           data-placement="bottom"
           href="https://github.com/kreait/slack-spring-boot-starter"
-          target="_blank"
-        >
+          target="_blank">
           <i class="fab fa-github"></i>
           <p class="d-lg-none d-xl-none">Github</p>
         </a>
