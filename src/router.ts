@@ -4,6 +4,7 @@ const  Landing =require('@/pages/Landing').default;
 const MainNavbar =require('@/layout/MainNavbar').default;
 const MainFooter =require('@/layout/MainFooter.vue').default;
 const  Starter =require('@/pages/StarterPage').default;
+const  ApiIndex =require('@/pages/ApiDocumentationIndexPage').default;
 Vue.use(Router);
 
 export default new Router({
@@ -22,6 +23,15 @@ export default new Router({
       path: '/guides/:guideId',
       name: 'guides',
       components: { default: Starter, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 0 },
+        footer: { backgroundColor: 'black' },
+      },
+    },
+    {
+      path: '/docs/api/latest',
+      name: 'guides',
+      components: { default: ApiIndex, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 0 },
         footer: { backgroundColor: 'black' },
