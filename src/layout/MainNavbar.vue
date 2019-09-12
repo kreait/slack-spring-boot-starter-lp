@@ -16,14 +16,12 @@
         tag="li"
         title="Components"
         class="nav-item">
-        <nav-link to="/">
+        <nav-link style="color: #2c2c2c" class="nav-link" to="/">
           All components
         </nav-link>
-        <a href="https://github.com/kreait/slack-spring-boot-starter"
-          target="_blank"
-          class="dropdown-item">
-          Documentation
-        </a>
+        <router-link style="color: #2c2c2c" class="nav-link" to="/docs/api/latest">
+          Api-Documentation
+        </router-link>
       </drop-down>
       <drop-down
               tag="li"
