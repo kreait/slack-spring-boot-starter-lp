@@ -5,10 +5,10 @@ const MainNavbar =require('@/layout/MainNavbar').default;
 const MainFooter =require('@/layout/MainFooter.vue').default;
 const  Starter =require('@/pages/StarterPage').default;
 const  ApiIndex =require('@/pages/ApiDocumentationIndexPage').default;
-Vue.use(Router);
+
 
 export default new Router({
-  linkExactActiveClass: 'active',
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -46,3 +46,4 @@ export default new Router({
     }
   }
 });
+Vue.use(Router);
