@@ -16,10 +16,10 @@
         tag="li"
         title="Components"
         class="nav-item">
-        <nav-link style="color: #2c2c2c" class="nav-link" to="/docs/latest/reference/index.html">
+        <a style="color: #2c2c2c" class="nav-link" href="https://slack-spring-boot.kreait.dev/docs/latest/reference/index.html">
           Reference-Documentation
-        </nav-link>
-        <router-link style="color: #2c2c2c" class="nav-link" to="/docs/latest/api">
+        </a>
+        <router-link style="color: #2c2c2c" class="nav-link" to="/docs/latest/api/">
           Api-Documentation
         </router-link>
       </drop-down>

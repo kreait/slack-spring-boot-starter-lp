@@ -29,7 +29,7 @@ export default new Router({
       },
     },
     {
-      path: '/docs/latest/api',
+      path: '/docs/latest/api/',
       name: 'guides',
       components: { default: ApiIndex, header: MainNavbar, footer: MainFooter },
       props: {
