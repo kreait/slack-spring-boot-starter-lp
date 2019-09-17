@@ -28,12 +28,12 @@
               title="Examples"
               class="nav-item">
 
-        <a style="color: #2c2c2c" href="https://github.com/kreait/slack-spring-boot-starter/blob/master/samples/slack-spring-boot-starter-sample/src/main/kotlin/io/olaph/slack/sample/PingCommandReceiver.kt">
+        <a style="color: #2c2c2c" href="https://github.com/kreait/slack-spring-boot-starter/blob/master/samples/slack-spring-boot-starter-sample/src/main/kotlin/com/kreait/slack/sample/rock_paper_scissors/RockPaperScissorsCommandReceiver.kt">
           <nav-link>
             Slash Command Receiver
           </nav-link>
         </a>
-        <a style="color: #2c2c2c" href="https://github.com/kreait/slack-spring-boot-starter/blob/master/samples/slack-spring-boot-starter-sample/src/main/kotlin/io/olaph/slack/sample/ChannelRenamedEventReceiver.kt">
+        <a style="color: #2c2c2c" href="https://github.com/kreait/slack-spring-boot-starter/blob/master/samples/slack-spring-boot-starter-sample/src/main/kotlin/com/kreait/slack/sample/rock_paper_scissors/RockPaperScissorsChannelListener.kt">
           <nav-link>
             Event Receiver
           </nav-link>
