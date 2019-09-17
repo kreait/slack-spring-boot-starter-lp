@@ -16,10 +16,10 @@
         tag="li"
         title="Components"
         class="nav-item">
-        <nav-link style="color: #2c2c2c" class="nav-link" to="/">
-          All components
+        <nav-link style="color: #2c2c2c" class="nav-link" to="/docs/latest/reference/index.html">
+          Reference-Documentation
         </nav-link>
-        <router-link style="color: #2c2c2c" class="nav-link" to="/docs/api/latest">
+        <router-link style="color: #2c2c2c" class="nav-link" to="/docs/latest/api">
           Api-Documentation
         </router-link>
       </drop-down>

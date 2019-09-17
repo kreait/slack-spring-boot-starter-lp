@@ -27,8 +27,7 @@
             href="https://www.invisionapp.com/now"
             target="_blank"
             class="btn btn-primary btn-lg btn-simple btn-round"
-            role="button"
-          >
+            role="button">
             Download PSD/Sketch
           </a>
         </div>
