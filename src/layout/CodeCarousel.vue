@@ -10,19 +10,19 @@
         img-height="480"
         style="text-shadow: 1px 1px 2px #000000;">
         <b-carousel-slide
-                style="height: 440px;"
+                style="height: 440px; padding: 24px;"
                 caption="Want to post a message?"
                 text="Simply call slackClient.chat().postMessage() and pass your message!"
                 img-src="../assets/img/code_snippet_post_message.png">
         </b-carousel-slide>
         <b-carousel-slide
-                style="height: 440px;"
+                style="height: 440px; padding: 24px;"
                 caption="Want to open a dialog? "
                 text="Simply call slackClient.dialog().open(), and pass your elements."
                 img-src="../assets/img/code_snippet_open_dialog.png">
         </b-carousel-slide>
         <b-carousel-slide
-                style="height: 440px;"
+                style="height: 440px; padding: 24px;"
                 caption="Want to react to a slash-command?"
                 text="Simply implement the SlashCommandReceiver interface"
                 img-src="../assets/img/code_snippet_slash_command.png">

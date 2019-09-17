@@ -15,7 +15,7 @@
       <drop-down
         tag="li"
         title="Components"
-        class="nav-item">
+        class="">
         <a style="color: #2c2c2c" class="nav-link" href="https://slack-spring-boot.kreait.dev/docs/latest/reference/index.html">
           Reference-Documentation
         </a>
