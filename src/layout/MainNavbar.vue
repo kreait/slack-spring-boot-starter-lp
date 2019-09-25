@@ -38,7 +38,7 @@
             Event Receiver
           </nav-link>
         </a>
-        <a style="color: #2c2c2c" href="https://github.com/kreait/slack-spring-boot-starter/blob/master/samples/slack-spring-boot-starter-sample/src/main/kotlin/io/olaph/slack/sample/DialogWorkflow.kt">
+        <a style="color: #2c2c2c" href="https://github.com/kreait/slack-spring-boot-starter/blob/master/samples/slack-spring-boot-starter-sample/src/main/kotlin/com/kreait/slack/sample/rock_paper_scissors/RockPaperScissorsSubmissionReceiver.kt">
           <nav-link>
             Interactive Component Receiver
           </nav-link>
