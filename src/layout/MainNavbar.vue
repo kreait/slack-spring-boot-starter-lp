@@ -16,7 +16,7 @@
         tag="li"
         title="Components"
         class="">
-        <a style="color: #2c2c2c" class="nav-link" href="https://slack-spring-boot.kreait.dev/docs/latest/reference/index.html">
+        <a style="color: #2c2c2c" class="nav-link" href="https://slack-spring-boot.kreait.dev/docs/latest-SNAPSHOT/reference/index.html">
           Reference-Documentation
         </a>
         <router-link style="color: #2c2c2c" class="nav-link" to="/docs/latest/api/">
