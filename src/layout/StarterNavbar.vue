@@ -2,7 +2,7 @@
   <navbar position="fixed" type="primary" menu-classes="ml-auto">
     <template slot-scope="{ toggle, isToggled }">
       <router-link v-popover:popover1 class="navbar-brand" to="/presentation">
-        My Site Name
+        Slack Spring Boot Starter by KREAIT
       </router-link>
       <el-popover
         ref="popover1"

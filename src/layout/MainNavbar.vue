@@ -14,13 +14,13 @@
     <template slot="navbar-menu">
       <drop-down
         tag="li"
-        title="Components"
+        title="Documentation"
         class="">
         <a style="color: #2c2c2c" class="nav-link" href="https://slack-spring-boot.kreait.dev/docs/latest-SNAPSHOT/reference/index.html">
-          Reference-Documentation
+          Reference Docs
         </a>
         <router-link style="color: #2c2c2c" class="nav-link" to="/docs/latest/api/">
-          Api-Documentation
+          API Docs
         </router-link>
       </drop-down>
       <drop-down

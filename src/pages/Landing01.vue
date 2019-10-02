@@ -16,7 +16,7 @@
       <div class="section section-about-us">
         <div class="container">
           <h2 class="title">Why use Slack Spring Boot Starter?</h2>
-          <div class="col-md-8 ml-auto mr-auto desc-spacer">
+          <div class="col-md-8 ml-auto mr-auto text-center">
             <h5>
               Slack Spring Boot Starter comes with a set of abstractions to prevent boilerplate code. Creating Slash Commands, handling events and reacting
               on interactive components is as simple as implementing an interface. It also comes with a simplified installation workflow that takes care of the
@@ -26,26 +26,27 @@
         </div>
       </div>
     </center>
-    <div class="section container"><CodeCarousel></CodeCarousel></div>
-
+    <div class="section container">
+      <CodeCarousel></CodeCarousel>
+    </div>
     <center class="m-12">
       <div class="w-50 m-12">
-        <h2 class="title">Why we do what we do</h2>
-        <div class="col-md-12 ml-auto mr-auto text-center">
-            <h5>
-              <div class="desc-spacer">
-                We experienced that no currently available SDK suits our needs in the JVM world so we came up with a new solution an abstraction layer wich can be open sourced,
-                so nobody has to implement all available Slack methods ever again.
-              </div>
-              <div class="desc-spacer">
-                By deciding to publish the SDK for everyone our view on development shifted and we started providing convenience abstractions for storing relevant
-                data used on a regular basis so you don't have to care about the installation process and the OAuth workflow anymore.
-              </div>
-              <div class="desc-spacer">
-                Credentials are either stored in a MongoDB, a local file or inMemory for development purposes.
-              </div>
-           </h5>
-          </div>
+        <h2>
+          Why we do what we do
+        </h2>
+        <h5>
+
+        </h5>
+        <p>
+          We experienced that no currently available sdk suits our needs in the JVM world, so we started from scratch and decided to create an abstraction layer which can be open sourced,
+          so no one has to implement all the available slack methods again. <br/>
+          Since we decided to make the sdk available for others, our view on how to implement things shifted. for example:<br/>
+          <i>"we have to save the authentication token when the user installs the app"</i><br/>
+          shifted to:
+          <i>"everyone has to save those tokens, lets create a teamstore abstraction with default implementations"</i>
+        </p>
+        <p>and now you dont have to struggle with the oauth & installation flow anymore, just run the app, hit install and the whole oauth flow just works,
+          and the credentials are saved in a mongoDb, a file, or for development purposes just in memory</p>
     </div>
   </center>
     <div class="section section-team text-center">
@@ -124,10 +125,5 @@ li {
   font-size: 1.24em;
   text-align: left;
   margin-bottom: 1%;
- }
-
- .desc-spacer {
-   text-align: left;
-   margin-bottom:4%;
  }
 </style>
