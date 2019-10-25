@@ -1,4 +1,7 @@
-on: push
+on:
+  push:
+    branches:
+    - master
 name: Build and Publish
 jobs:
   install:
@@ -11,9 +14,7 @@ jobs:
         entrypoint: yarn
         args: install
     - name: Only Master
-      uses: actions/bin/filter@b2bea0749eed6beb495a8fa194c071847af60ea1
-      with:
-        args: branch master
+        
     - name: build
       uses: actions/npm@1.0.0
       with:
