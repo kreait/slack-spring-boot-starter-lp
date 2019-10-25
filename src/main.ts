@@ -1,14 +1,16 @@
 import Vue from 'vue';
+const VueAnalytics = require('vue-ua');
 
 import router from '@/router';
 
 import App from '@/App.vue';
-import VueAnalytics from 'vue-ua'
+
 
 const NowUiKit = require('@/plugins/now-ui-kit');
 import CodeCarousel from '@/layout/CodeCarousel.vue';
 
 Vue.use(NowUiKit);
+
 Vue.use(VueAnalytics, {
   // [Required] The name of your app as specified in Google Analytics.
   appName: 'Slack Spring Boot Starter',
