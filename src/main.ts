@@ -10,10 +10,11 @@ const NowUiKit = require('@/plugins/now-ui-kit');
 import CodeCarousel from '@/layout/CodeCarousel.vue';
 
 Vue.use(NowUiKit);
-Vue.use(VueAnalytics, {
-id: 'UA-82654714-4'
-})
 
+Vue.use(VueAnalytics, {
+  id: 'UA-82654714-4',
+  router
+})
 
 Vue.config.productionTip = false;
 Vue.component('CodeCarousel', CodeCarousel)
