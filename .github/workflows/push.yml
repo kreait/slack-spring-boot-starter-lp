@@ -1,35 +1,32 @@
+name: Build and Publish
+
 on:
   push:
     branches:
-    - master
-name: Build and Publish
+      - master
+
 jobs:
-  install:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: install
-      uses: actions/npm@1.0.0
-      with:
-        entrypoint: yarn
-        args: install
-    - name: build
-      uses: actions/npm@1.0.0
-      with:
-        entrypoint: yarn
-        args: build
-    - name: Configure Website Bucket
-      uses: actions/aws/cli@master
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      with:
-        args: s3 website s3://${{ secrets.AWS_BUCKET_NAME }} --region eu-central-1 --index-document
-          index.html
-    - name: upload
-      uses: actions/aws/cli@master
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      with:
-        args: s3 sync ./dist s3://${{ secrets.AWS_BUCKET_NAME }} --region eu-central-1
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js for use with actions
+        uses: actions/setup-node@v1.1.0
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Build Landing Page
+        run: npm run-script build
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+
+      - name: Copy files to S3
+        run: aws s3 sync ./dist s3://${{ secrets.AWS_BUCKET_NAME }}
