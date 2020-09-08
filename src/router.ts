@@ -30,7 +30,7 @@ export default new Router({
     },
     {
       path: '/docs/latest/api/',
-      name: 'guides',
+      name: 'api',
       components: { default: ApiIndex, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 0 },
